@@ -1,4 +1,3 @@
-
 from datetime import date
 
 
@@ -17,7 +16,7 @@ def solicitar_nombre():
         print("Error: el nombre no puede estar vacío.")
 
 
-def solicitar_anio_nacimiento():
+def solicitar_nacimiento():
     """Solicita un año de nacimiento válido.
 
     Returns:
@@ -25,16 +24,16 @@ def solicitar_anio_nacimiento():
     """
     while True:
         try:
-            anio = int(input("Introduce tu año de nacimiento: "))
+            year = int(input("Introduce tu año de nacimiento: "))
 
-            anio_actual = date.today().year
+            year_actual = date.today().year
 
-            if not 1900 <= anio <= anio_actual:
+            if not 1900 <= year <= year_actual:
                 raise ValueError(
-                    f"El año debe estar entre 1900 y {anio_actual}."
+                    f"El año debe estar entre 1900 y {year_actual}."
                 )
 
-            return anio
+            return year
 
         except ValueError as error:
             print(f"Error: {error}")
@@ -43,13 +42,13 @@ def solicitar_anio_nacimiento():
 def main():
     """Solicita los datos y calcula los años transcurridos."""
     nombre = solicitar_nombre()
-    anio_nacimiento = solicitar_anio_nacimiento()
+    year_nacimiento = solicitar_nacimiento()
 
-    anio_actual = date.today().year
+    year_actual = date.today().year
 
-    anios = anio_actual - anio_nacimiento
+    years = year_actual - year_nacimiento
 
-    print(f"¡Hola {nombre}! - Naciste hace {anios} años.")
+    print(f"¡Hola {nombre}! - Naciste hace {years} años.")
 
 
 if __name__ == "__main__":

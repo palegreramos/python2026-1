@@ -1,4 +1,3 @@
-
 def solicitar_entero():
     """Solicita un número entero mayor o igual que 2.
 
@@ -27,7 +26,7 @@ def obtener_pares(limite):
     Returns:
         list: Lista de números pares.
     """
-    # Devuelve una lista de números pares utilizando range() con paso 2
+    # Devuelve una lista de números pares utilizando range() con step 2
     return list(range(2, limite + 1, 2))
 
 

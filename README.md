@@ -2,7 +2,7 @@
 
 ## Ejercicios
 
-1. **ejercicio1.py – Nombre y año de nacimiento:** solicitar datos y calcular los años transcurridos desde el nacimiento.
+1. **ejercicio1.py – Nombre y año de nacimiento:** solicitar nombre y año de nacimiento y calcular los años transcurridos desde el nacimiento.
 2. **ejercicio2.py – Cadenas de caracteres:** mostrar un nombre en mayúsculas, contar sus caracteres y repetirlo tantas veces como caracteres tenga.
 3. **ejercicio3.py – Números pares:** mostrar los números pares desde 2 hasta un número introducido por teclado.
 
